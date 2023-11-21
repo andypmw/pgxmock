@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/pashagolub/pgxmock/v3"
+	"github.com/andypmw/pgxmock/v3"
 )
 
 // a successful case
