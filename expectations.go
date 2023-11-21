@@ -52,7 +52,14 @@ func (e *commonExpectation) fulfill() {
 }
 
 func (e *commonExpectation) fulfilled() bool {
-	return e.triggered >= max(e.plannedCalls, 1)
+	theMax := uint(1)
+	plannedCallsQty := uint(e.plannedCalls)
+
+	if plannedCallsQty > theMax {
+		theMax = plannedCallsQty
+	}
+
+	return e.triggered >= theMax
 }
 
 func (e *commonExpectation) required() bool {

@@ -1,6 +1,6 @@
-module github.com/pashagolub/pgxmock/v3
+module github.com/andypmw/pgxmock/v3
 
-go 1.21
+go 1.19
 
 require (
 	github.com/jackc/pgx/v5 v5.5.0
